@@ -1,5 +1,25 @@
 .sidenav-container {
   height: 100%;
+  background-image: url("src/assets/truck.jpg");
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: scroll;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+
+  @media only screen and (min-width: 1200px) {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+  }
+
+  @media only screen and (max-width: 320px) {
+    
+}
+
 }
 
 .sidenav {
@@ -20,22 +40,16 @@ mat-toolbar a {
   margin: 0 10px;
   color: white;
   text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Archivo';
 }
-/*
-@media (min-width: 768px) {
-  .sidenav {
-    display: none;
-  }
-} */
 
 span {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Archivo';
   color: white;
 }
 
 a {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Archivo';
 }
 
 .hide {
@@ -45,7 +59,7 @@ a {
 }
 
 mat-toolbar {
-  background-image: linear-gradient(to right top, #ff0000, #ff5400, #ff7c00, #ff9e00, #ffbc00);
+  background-image: linear-gradient(to right top, #0f5cd5, #0073d8, #0084d0, #0091c2, #009cb3);
   color: white;
 }
 
@@ -56,3 +70,86 @@ mat-toolbar {
   padding: 7.5px;
 }
 
+.image {
+  background-position: center center;
+  font-family: 'Rubik';
+  font-size: 150%;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 100px;
+  margin-top: 20px;
+  text-align: end center;
+// 		-1px -1px 0 black,
+// 		1px -1px 0 black,
+// 		-1px 1px 0 black,
+// 		1px 1px 0 black; 
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.describe {
+  color: rgba(0, 0, 0, 0);
+  font-family: 'Rubik';
+}
+
+
+h1 {
+  position: relative;
+  color: rgb(77, 77, 77);
+  text-decoration: none;
+}
+
+h1:hover {
+  color: rgb(77, 77, 77);
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(77, 77, 77);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h1:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
