@@ -3,7 +3,7 @@
       [mode]="(isHandset | async)!.matches ? 'over' : 'side'" [opened]="!(isHandset | async)!.matches">
       <mat-toolbar>Menu</mat-toolbar>
       <mat-nav-list>
-          <a mat-list-item href="#">Sherbimet Tona</a>
+          <a mat-list-item routerLink="/sherbimet">Sherbimet Tona</a>
           <a mat-list-item href="#">Kontakt</a>
           <a mat-list-item href="#">Rreth Nesh</a>
       </mat-nav-list>
@@ -17,12 +17,12 @@
         <a href="#"><span>BLEDI-TRANS</span></a>
         <span class="spacer"></span>
         <div fxHide.xs fxHide.sm fxLayoutAlign="end center">
-          <button mat-button class="show"><a href="#">Sherbimet Tona</a></button>
+          <button mat-button class="show"><a routerLink="/sherbimet">Sherbimet Tona</a></button>
           <button mat-button class="show"><a href="#">Kontakt</a></button>
           <button mat-button class="show"><a href="#">Rreth Nesh</a></button>
         </div>
       </mat-toolbar>
-      <div class="image" fxLayout="row" fxLayoutALign="end center">
+      <div class="image" fxLayout="row" fxLayoutALign="center center">
         <h1 fxLayout="row" fxLayoutALign="end center">INTERNATIONAL TRANSPORT BLEDI-TRANS</h1>
       </div>
       <div class="describe">
