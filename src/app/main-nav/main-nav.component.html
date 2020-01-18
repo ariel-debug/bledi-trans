@@ -4,7 +4,7 @@
       <mat-toolbar>Menu</mat-toolbar>
       <mat-nav-list>
           <a mat-list-item routerLink="/sherbimet">Sherbimet Tona</a>
-          <a mat-list-item href="#">Kontakt</a>
+          <a mat-list-item routerLink="/kontakt">Kontakt</a>
           <a mat-list-item href="#">Rreth Nesh</a>
       </mat-nav-list>
     </mat-sidenav>
@@ -19,7 +19,7 @@
         <div fxHide.xs fxHide.sm fxLayoutAlign="end center">
           <button mat-button class="show"><a routerLink="/sherbimet" (click)="drawer.toggle()">Sherbimet Tona</a></button>
           <button mat-button class="show"><a routerLink="/kontakt" (click)="drawer.toggle()">Kontakt</a></button>
-          <button mat-button class="show"><a href="#">Rreth Nesh</a></button>
+          <button mat-button class="show"><a routerLink="/rreth-nesh">Rreth Nesh</a></button>
         </div>
       </mat-toolbar>
       <div class="image" fxLayout="row" fxLayoutALign="center center">

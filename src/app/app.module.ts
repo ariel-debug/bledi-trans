@@ -16,13 +16,15 @@ import { MatCardModule } from '@angular/material';
 import { HomeModule } from 'src/app/home/home.module';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
