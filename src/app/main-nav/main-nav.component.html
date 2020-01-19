@@ -8,7 +8,7 @@
           <a mat-list-item href="#">Rreth Nesh</a>
       </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content>
+    <mat-sidenav-content style="overflow-y: hidden;">
       <mat-toolbar>
         <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="(isHandset | async)!.matches">
           <mat-icon aria-label="Side nav toggle icon">menu
@@ -22,18 +22,19 @@
           <button mat-button class="show"><a routerLink="/rreth-nesh">Rreth Nesh</a></button>
         </div>
       </mat-toolbar>
-      <div class="image" fxLayout="row" fxLayoutALign="center center">
-        <h1 fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign.xs="start center" fxLayoutALign="center center">BLEDI-TRANS TRANSPORT</h1>
-      </div>
-      <div class="describe">
-        <h2 fxLayoutAlign="center center">
-          Eksperience me mbi 8 vjet ne treg.
-        </h2>
-        <h2 fxLayoutAlign="center center">
-          Sherbim cilesor dhe korrekt.
-        </h2>
-        <h2 fxLayoutAlign="center center">
-          Per me shume informacion na kontaktoni.
+      <div class="image" fxLayout="column" fxLayoutALign="center center">
+        <img 
+            fxLayout.lg="row" 
+            fxLayout.xs="column" 
+            fxLayoutAlign.xs="start center" 
+            fxLayoutAlign="center center" 
+            src="https://scontent.ftia4-1.fna.fbcdn.net/v/t1.15752-0/p280x280/83479982_853972301699536_4053193798677692416_n.png?_nc_cat=106&_nc_ohc=eR5IlUHbyoUAX9xuOGX&_nc_ht=scontent.ftia4-1.fna&oh=6a344eaa6012d19977fa93823d274bb4&oe=5E92D6F7">
+        <h2
+          fxLayout.lg="row" 
+          fxLayout.xs="column" 
+          fxLayoutAlign.xs="start center" 
+          fxLayoutAlign="center center">
+          Sherbim cilesor me nje nga kompanite lidere ne tregun e transportit.
         </h2>
       </div>
     </mat-sidenav-content>
