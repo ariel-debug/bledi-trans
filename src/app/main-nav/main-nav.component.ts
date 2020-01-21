@@ -11,5 +11,20 @@ export class MainNavComponent {
   isHandset: Observable<BreakpointState> = this.breakpointObserver.observe(Breakpoints.Handset);
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  disableScroll() {
+    let scrollTop;
+    let scrollLeft;
+
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+    window.onscroll = function() {
+      window.scrollTo(scrollLeft, scrollTop);
+    };
+  }
+
+  enableScroll() {
+    window.onscroll = function() {};
+  }
 }
 
