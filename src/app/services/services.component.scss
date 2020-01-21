@@ -1,8 +1,8 @@
 img {
     width: 373px !important;
     height: 280px !important;
-    border-radius: 8px;
-    border: 5px solid #56d8cf;
+    border-radius: 32px;
+    border: 3px solid RGB(0, 138, 200);
     padding: 5px;
     margin-bottom: 70px;
 }
@@ -43,16 +43,18 @@ h1 {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-
-
+  
+  
   mat-card-header {
     font-weight: 10px;
     font-size: 21px;
     margin-top: 20px !important;
-    margin-bottom: 70px !important;
+    margin-bottom: 5%;
     font-family: 'Rubik';
     align-items: flex-start;
     font-size: 250%;
+    text-align: center;
+    flex-direction: column !important;
   }
 
   mat-card {
@@ -65,9 +67,14 @@ h1 {
     padding: 20px;
     font-size: 150%;
     font-family: 'Archivo';
+
+    @media screen and (max-width: 414px 375px) {
+      text-align: center;
+    }
   }
   
   .services {
     background-image: linear-gradient(to right top, #0f5cd5, #0073d8, #0084d0, #0091c2, #009cb3);
     z-index: 9;
+    overflow-x: hidden;
   }
