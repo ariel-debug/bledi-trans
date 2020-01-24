@@ -1,43 +1,45 @@
 <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #drawer class="sidenav" [ngClass]="{hidden: !(isHandset | async)!.matches}" fixedInViewport="false" [attr.role]="isHandset ? 'dialog' : 'navigation'"
-      [mode]="(isHandset | async)!.matches ? 'over' : 'side'" [opened]="!(isHandset | async)!.matches">
-      <mat-toolbar>Menu</mat-toolbar>
-      <mat-nav-list>
-          <a mat-list-item routerLink="/sherbimet" (click)="!drawer.toggle();" (click)="enableScroll();">Sherbimet Tona</a>
-          <a mat-list-item routerLink="/kontakt" (click)="!drawer.toggle();" (click)="enableScroll();">Kontakt</a>
-          <a mat-list-item routerLink="/rreth-nesh" (click)="!drawer.toggle();" (click)="enableScroll();">Rreth Nesh</a>
-      </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content style="overflow-y: hidden;">
-      <mat-toolbar>
-        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="(isHandset | async)!.matches">
-          <mat-icon aria-label="Side nav toggle icon" (click)="disableScroll();">menu
-          </mat-icon>
-        </button>
-        <button type="button" mat-button class="show">
-          <a routerLink="/"><span>BLEDI-TRANS</span></a>
-        </button>
-        <span class="spacer"></span>
-        <div fxHide.xs fxHide.sm fxLayoutAlign="end center">
-          <button mat-button class="show"><a routerLink="/sherbimet">Sherbimet Tona</a></button>
-          <button mat-button class="show"><a routerLink="/kontakt">Kontakt</a></button>
-          <button mat-button class="show"><a routerLink="/rreth-nesh">Rreth Nesh</a></button>
-        </div>
-      </mat-toolbar>
-      <div class="image" fxLayout="column" fxLayoutALign="center center">
-        <img 
-            fxLayout.lg="row" 
-            fxLayout.xs="column" 
-            fxLayoutAlign.xs="start center" 
-            fxLayoutAlign="center center" 
-            src="https://scontent.ftia4-1.fna.fbcdn.net/v/t1.15752-0/p280x280/83479982_853972301699536_4053193798677692416_n.png?_nc_cat=106&_nc_ohc=eR5IlUHbyoUAX9xuOGX&_nc_ht=scontent.ftia4-1.fna&oh=6a344eaa6012d19977fa93823d274bb4&oe=5E92D6F7">
-        <h2
-          fxLayout.lg="row" 
-          fxLayout.xs="column" 
-          fxLayoutAlign.xs="start center" 
-          fxLayoutAlign="center center">
-          Sherbim cilesor me nje nga kompanite lidere ne tregun e transportit.
-        </h2>
+  <mat-sidenav #drawer class="sidenav" [ngClass]="{hidden: !(isHandset | async)!.matches}" fixedInViewport="false"
+    [attr.role]="isHandset ? 'dialog' : 'navigation'" [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
+    [opened]="!(isHandset | async)!.matches">
+    <mat-toolbar>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="!drawer.toggle()"
+        (click)="enableScroll()" *ngIf="(isHandset | async)!.matches"
+        style="margin-left: 0; margin-right: 0; margin-bottom: 9px;">
+        <mat-icon aria-label="Side nav toggle icon">menu
+        </mat-icon>
+      </button>
+      Menu
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/sherbimet" (click)="!drawer.toggle();" (click)="enableScroll()">Sherbimet Tona</a>
+      <a mat-list-item routerLink="/kontakt" (click)="!drawer.toggle();" (click)="enableScroll()">Kontakt</a>
+      <a mat-list-item routerLink="/rreth-nesh" (click)="!drawer.toggle();" (click)="enableScroll()">Rreth Nesh</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content style="overflow-y: hidden;">
+    <mat-toolbar>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="(isHandset | async)!.matches" (click)="disableScroll()">
+        <mat-icon aria-label="Side nav toggle icon">menu
+        </mat-icon>
+      </button>
+      <button type="button" mat-button class="show">
+        <a routerLink="/"><span>BLEDI-TRANS</span></a>
+      </button>
+      <span class="spacer"></span>
+      <div fxHide.xs fxHide.sm fxLayoutAlign="end center">
+        <button mat-button class="show"><a routerLink="/sherbimet">Sherbimet Tona</a></button>
+        <button mat-button class="show"><a routerLink="/kontakt">Kontakt</a></button>
+        <button mat-button class="show"><a routerLink="/rreth-nesh">Rreth Nesh</a></button>
       </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+    </mat-toolbar>
+    <div class="image" fxLayout="column" fxLayoutALign="center center">
+      <img fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign.xs="start center" fxLayoutAlign="center center"
+        src="https://scontent.ftia4-1.fna.fbcdn.net/v/t1.15752-0/p280x280/83479982_853972301699536_4053193798677692416_n.png?_nc_cat=106&_nc_ohc=eR5IlUHbyoUAX9xuOGX&_nc_ht=scontent.ftia4-1.fna&oh=6a344eaa6012d19977fa93823d274bb4&oe=5E92D6F7">
+      <h2 fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign.xs="start center" fxLayoutAlign="center center">
+        Sherbim cilesor me nje nga kompanite lidere ne tregun e transportit.
+      </h2>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
