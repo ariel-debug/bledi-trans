@@ -3,7 +3,7 @@
     height: 15rem;
     margin: auto;
 
-    @media only screen and (max-width: 414px, 357px) {
+    @media only screen and (max-width: 414px, 357px, 320px) {
       align-content: center;
       flex-direction: column;
       display: flex;
@@ -69,7 +69,7 @@ img {
     margin: auto;
     margin-right: 15rem;
 
-    @media only screen and (max-width: 414px, 375px) {
+    @media only screen and (max-width: 414px, 375px, 320px) {
       margin-right: 0px !important;
     }
 }

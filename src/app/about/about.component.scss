@@ -9,7 +9,7 @@ h1 {
 
 .list {
     width: max-content;
-    @media only screen and (max-width: 414px, 375px) {
+    @media only screen and (max-width: 414px, 375px, 320px) {
         height: 150px;
         width: 150px;
         float: left;
