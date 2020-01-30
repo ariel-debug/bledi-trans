@@ -45,6 +45,7 @@ import { FooterComponent } from './footer/footer.component';
     AngularFontAwesomeModule,
     MatCardModule,
     HomeModule,
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

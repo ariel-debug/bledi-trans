@@ -1,7 +1,7 @@
 
 <div class="who" fxLayout="column" fxLayoutAlign="center center" fxHide.xs>
   <h5 style="margin-bottom: auto;">Bledi-Trans</h5>
-  <p class="p">Me mbi 8 vjet eksperience ne tregun e transportit, cilesia eshte e pashmangshme.</p>
+  <p class="p">{{ 'SecondaryHeader' | translate }}</p>
 </div>
 <div fxLayoutAlign="center center" fxHide.lg fxHide.xl fxHide.md>
   <h6>Bledi-Trans</h6>
@@ -15,11 +15,11 @@
     <mat-icon fontSet="fontawesome" fontIcon="fa-truck" fxLayoutAlign="center center"></mat-icon>
     <mat-card-content>
       <p>
-        Kompania jone ofron nje numer sherbimesh si transport i plote, transport me grupazh, asistence doganore, etj.   
+        {{ 'ParagraphOne' | translate }}
       </p>
     </mat-card-content>
     <mat-card-actions fxLayoutAlign="center center">
-      <button mat-raised-button routerLink="/sherbimet" color="primary">Lexo me shume</button>
+      <button mat-raised-button routerLink="/sherbimet" color="primary">{{ 'ButtonOne' | translate }}</button>
     </mat-card-actions>
   </mat-card>
   <mat-card class="mat2" fxLayout="column" fxlayoutAlign="center center">
@@ -30,11 +30,11 @@
     <mat-icon fontSet="fontawesome" fontIcon="fa-phone-square" fxLayoutAlign="center center"></mat-icon>
     <mat-card-content>
       <p>
-        Per porositje te sherbimeve tona na kontaktoni ne keta numra telefoni:
+        {{ 'ParagraphTwo' | translate }}
       </p>
     </mat-card-content>
     <mat-card-actions fxLayoutAlign="center center">
-      <button mat-raised-button color="primary" routerLink="/kontakt">Kontakt</button>
+      <button mat-raised-button color="primary" routerLink="/kontakt">{{ 'ButtonTwo' | translate }}</button>
     </mat-card-actions>
   </mat-card>
   <mat-card class="mat3" fxLayout="column" fxlayoutAlign="center center">
@@ -45,11 +45,11 @@
     <mat-icon fontSet="fontawesome" fontIcon="fa-user" fxLayoutAlign="center center"></mat-icon>
     <mat-card-content>
       <p>
-        Na ndiqni edhe ne rrjetet tona sociale.
+        {{ 'ParagraphThree' | translate }}
       </p>
     </mat-card-content>
     <mat-card-actions fxLayoutAlign="center center">
-      <button mat-raised-button color="primary" routerLink="/rreth-nesh">Rreth Nesh</button>
+      <button mat-raised-button color="primary" routerLink="/rreth-nesh">{{ 'ButtonThree' | translate }}</button>
     </mat-card-actions>
   </mat-card>
 </div>

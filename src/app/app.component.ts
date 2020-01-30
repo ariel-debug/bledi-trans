@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
 
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
+    translate.use('en');
   }
   title = 'bledi-trans';
 

@@ -12,9 +12,9 @@
       Menu
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/sherbimet" (click)="!drawer.toggle();" (click)="enableScroll()">Sherbimet Tona</a>
-      <a mat-list-item routerLink="/kontakt" (click)="!drawer.toggle();" (click)="enableScroll()">Kontakt</a>
-      <a mat-list-item routerLink="/rreth-nesh" (click)="!drawer.toggle();" (click)="enableScroll()">Rreth Nesh</a>
+      <a mat-list-item routerLink="/sherbimet" (click)="!drawer.toggle();" (click)="enableScroll()">{{ 'OurServices' | translate }}</a>
+      <a mat-list-item routerLink="/kontakt" (click)="!drawer.toggle();" (click)="enableScroll()">{{ 'Contacts' | translate }}</a>
+      <a mat-list-item routerLink="/rreth-nesh" (click)="!drawer.toggle();" (click)="enableScroll()">{{ 'About' | translate }}</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content style="overflow-y: hidden;">
@@ -29,16 +29,16 @@
       </button>
       <span class="spacer"></span>
       <div fxHide.xs fxHide.sm fxLayoutAlign="end center">
-        <button mat-button class="show"><a routerLink="/sherbimet">Sherbimet Tona</a></button>
-        <button mat-button class="show"><a routerLink="/kontakt">Kontakt</a></button>
-        <button mat-button class="show"><a routerLink="/rreth-nesh">Rreth Nesh</a></button>
+        <button mat-button class="show"><a routerLink="/sherbimet">{{ 'Our Services' | translate }}</a></button>
+        <button mat-button class="show"><a routerLink="/kontakt">{{ 'Contacts' | translate }}</a></button>
+        <button mat-button class="show"><a routerLink="/rreth-nesh">{{ 'About' | translate }}</a></button>
       </div>
     </mat-toolbar>
     <div class="image" fxLayout="column" fxLayoutALign="center center">
       <img fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign.xs="start center" fxLayoutAlign="center center"
         src="https://scontent.ftia4-1.fna.fbcdn.net/v/t1.15752-0/p280x280/83479982_853972301699536_4053193798677692416_n.png?_nc_cat=106&_nc_ohc=eR5IlUHbyoUAX9xuOGX&_nc_ht=scontent.ftia4-1.fna&oh=6a344eaa6012d19977fa93823d274bb4&oe=5E92D6F7">
       <h2 fxLayout.lg="row" fxLayout.xs="column" fxLayoutAlign.xs="start center" fxLayoutAlign="center center">
-        Sherbim cilesor me nje nga kompanite lidere ne tregun e transportit.
+        {{ 'MainHeader' | translate }}
       </h2>
     </div>
   </mat-sidenav-content>
