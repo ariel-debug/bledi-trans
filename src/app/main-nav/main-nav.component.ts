@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-nav',
@@ -9,7 +10,12 @@ import { Observable } from 'rxjs';
 })
 export class MainNavComponent {
   isHandset: Observable<BreakpointState> = this.breakpointObserver.observe(Breakpoints.Handset);
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private translate: TranslateService ) {
+      translate.use('en');
+      translate.use('sq');
+    }
 
   disableScroll() {
     let scrollTop;
@@ -25,6 +31,14 @@ export class MainNavComponent {
 
   enableScroll() {
     window.onscroll = function() {};
+  }
+
+  onEnglishUse() {
+    this.translate.use('en');
+  }
+
+  onAlbanianUse() {
+    this.translate.use('sq');
   }
 }
 

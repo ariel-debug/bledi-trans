@@ -17,6 +17,7 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MatCardModule } from '@angular/material';
+import { MatSelectModule } from '@angular/material';
 import { HomeModule } from 'src/app/home/home.module';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
@@ -41,6 +42,7 @@ import { FooterComponent } from './footer/footer.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatSelectModule,
     FlexLayoutModule,
     AngularFontAwesomeModule,
     MatCardModule,

@@ -11,10 +11,19 @@ export class AppComponent implements OnInit {
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('en');
     translate.use('en');
+    translate.use('sq');
   }
   title = 'bledi-trans';
 
   ngOnInit() {
 
+  }
+
+  onEnglishUse() {
+    this.translate.use('en');
+  }
+
+  onAlbanianUse() {
+    this.translate.use('sq');
   }
 }
