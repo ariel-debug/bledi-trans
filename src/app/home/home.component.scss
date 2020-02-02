@@ -1,5 +1,5 @@
 .div {
-  background-image: linear-gradient(to right top, #0f5cd5, #0073d8, #0084d0, #0091c2, #009cb3);
+  background-color: #0f5cd5;
   flex-direction: row;
   overflow-x: hidden;
 
@@ -171,6 +171,8 @@ p {
   margin-right: 15px;
   height: 100px;
   text-align: center;
+  font-family: 'Martel Sans';
+  font-weight: bold;
 
   @media only screen and (max-width: 375px, 414px, 320px) {
     text-align: center;
@@ -180,6 +182,7 @@ p {
 
 h5 {
   text-align: center;
+  font-weight: bold;
   @media only screen and (max-width: 375px, 414px) {
     text-align: center;
   }
