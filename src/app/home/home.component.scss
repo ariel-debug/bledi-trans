@@ -189,10 +189,12 @@ h5 {
 }
 
 h6 {
-  zoom: 200%;
+  zoom: 200% !important;
   position: relative;
   color: black;
   text-decoration: none;
+  margin-top: 5%;
+  font-family: 'Martel Sans';
 }
 
 h6:hover {

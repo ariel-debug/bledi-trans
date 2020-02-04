@@ -25,6 +25,16 @@ mat-list-item {
 
 h4 {
     color: white !important;
+
+    @media only screen and (max-height: 736px) {
+      text-align: center;
+      font-size: 125% !important;
+    }
+
+    @media only screen and (max-height: 823px) {
+      text-align: center;
+      font-size: 125% !important;
+    }
 }
 
 a {
