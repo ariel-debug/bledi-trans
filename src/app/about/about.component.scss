@@ -26,5 +26,26 @@ h4 {
 
 p {
     padding: 1%;
+
+    @media only screen and (max-width: 375px) {
+        width: 75%;
+        text-align: left;
+        margin-right: 10%;
+    }
+}
+
+h3 {
+    @media only screen and (max-width: 375px) {
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+
+mat-list {
+    @media only screen and (max-width: 375px) {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
 }
 

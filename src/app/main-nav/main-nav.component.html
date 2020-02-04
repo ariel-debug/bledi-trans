@@ -28,16 +28,21 @@
         <a routerLink="/"><span>BLEDI-TRANS</span></a>
       </button>
       <span class="spacer"></span>
+      <div >
+        <mat-label>
+          <i class="fa fa-globe">
+            <mat-select>
+              <mat-option (click)="onEnglishUse()">
+                English
+              </mat-option>
+              <mat-option (click)="onAlbanianUse()">
+                Shqip
+              </mat-option>
+            </mat-select>
+          </i>
+        </mat-label>
+      </div>
       <div fxHide.xs fxHide.sm fxLayoutAlign="end center">
-        <mat-label><i class="fa fa-globe"></i></mat-label>
-          <mat-select>
-            <mat-option (click)="onEnglishUse()">
-              English
-            </mat-option>
-            <mat-option (click)="onAlbanianUse()">
-              Shqip
-            </mat-option>
-          </mat-select>
         <button mat-button class="show"><a routerLink="/sherbimet">{{ 'OurServices' | translate }}</a></button>
         <button mat-button class="show"><a routerLink="/kontakt">{{ 'Contacts' | translate }}</a></button>
         <button mat-button class="show"><a routerLink="/rreth-nesh">{{ 'About' | translate }}</a></button>
