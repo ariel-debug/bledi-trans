@@ -1,9 +1,17 @@
 <div class="contact" fxLayout="column" fxLayout.xs="column" fxLayoutAlign="center center">
-    <h1>{{ 'Contacts' | translate }}</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.</p>
+    <h1 fxLayout="center center">{{ 'Contacts' | translate }}</h1>
+    <div class="list" fxLayouAlign="end start" fxLayout="row">
+        <mat-list role="list" id="first-list">
+            <h3 mat-subheader id="web">Rrjetet Sociale</h3>
+            <mat-list-item role="listitem">Facebook</mat-list-item>
+            <mat-list-item role="listitem">Instagram</mat-list-item>
+            <mat-list-item role="listitem">LinkedIn</mat-list-item>
+        </mat-list>
+        <mat-list role="list" id="second-list">
+            <h3 mat-subheader>Nr. Kontakti</h3>
+            <mat-list-item role="listitem">+35567 404 0930</mat-list-item>
+            <h3 mat-subheader>E-Mail</h3>
+            <mat-list-item role="listitem">bled.skendo.gmail.com</mat-list-item>
+        </mat-list>
+    </div>
 </div>

@@ -1,5 +1,5 @@
 .description {
-    margin: auto;
+    // margin: auto;
     padding: 40px;
 }
 
@@ -9,6 +9,7 @@ h1 {
 
 .list {
     width: max-content;
+    margin-bottom: 5%;
     @media only screen and (max-width: 414px, 375px, 320px) {
         height: 150px;
         width: 150px;
@@ -28,15 +29,14 @@ p {
     padding: 1%;
 
     @media only screen and (max-width: 375px) {
-        width: 75%;
-        text-align: left;
-        margin-right: 10%;
+        text-align: justify;
     }
 }
 
 h3 {
-    @media only screen and (max-width: 375px) {
-        text-align: center;
+    margin-top: 5%;
+    text-align: center !important;
+    @media only screen and (max-width: 375px, 414px) {
         margin-top: 10%;
     }
 }
@@ -47,5 +47,16 @@ mat-list {
         margin: auto;
         margin-bottom: 10%;
     }
+}
+
+img {
+    margin: 4%;
+    flex: auto;
+    border-radius: 50%;
+}
+
+.image {
+    margin-left: 3% !important;
+    margin-bottom: 3% !important;
 }
 

@@ -68,8 +68,8 @@ h1 {
     font-size: 150%;
     font-family: 'Archivo';
 
-    @media screen and (max-width: 414px 375px) {
-      text-align: center;
+    @media screen and (max-width: 414px) and (max-width: 375px) and (maz-width: 320px) {
+      text-align: center !important;
     }
   }
   
@@ -77,4 +77,8 @@ h1 {
     background-image: linear-gradient(to right top, #0f5cd5, #0073d8, #0084d0, #0091c2, #009cb3);
     z-index: 9;
     overflow-x: hidden;
+  }
+
+  .paragraph {
+    font-size: medium;
   }

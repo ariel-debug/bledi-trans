@@ -2,22 +2,25 @@
     <h1>Bledi-Trans</h1>
     <h3>{{ 'AboutHeader' | translate }}</h3>
     <div class="description">
-        <p fxLayoutAlign="center center" fxLayout="column">
+        <p fxLayout="column">
             {{ 'AboutParagraph' | translate }}
         </p>
-        <p>
-        </p>
     </div>
-    <div class="list" fxLayoutALign.xs="center center" fxLayout.xs="column">
-        <mat-list role="list">
-            <h4>{{ 'ListHeader' | translate }}</h4>
-            <mat-list-item role="listitem">{{ 'Region' | translate }}</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item role="listitem">{{ 'Italy' | translate }}</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item role="listitem">{{ 'Germany' | translate }}</mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item role="listitem">{{ 'Turkey' | translate }}</mat-list-item>
-        </mat-list>
+    <div fxLayout="row" class="image" fxHide.xs>
+        <div class="list" fxLayoutAlign="center start" fxLayoutALign.xs="center center" fxLayout.xs="column">
+            <mat-list role="list">
+                <h4>{{ 'ListHeader' | translate }}</h4>
+                <mat-list-item role="listitem">{{ 'Region' | translate }}</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item role="listitem">{{ 'Italy' | translate }}</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item role="listitem">{{ 'Germany' | translate }}</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item role="listitem">{{ 'Turkey' | translate }}</mat-list-item>
+            </mat-list>
+        </div>
+        <div>
+            <img src="https://scontent.ftia3-1.fna.fbcdn.net/v/t1.15752-0/p280x280/80950968_904705996598523_1413280721283317760_n.jpg?_nc_cat=104&_nc_ohc=asoyUVAXqmcAX8PM3k-&_nc_ht=scontent.ftia3-1.fna&_nc_tp=6&oh=6df8af615591508c10ab89897575afdc&oe=5ED777EC">
+        </div>
     </div>
 </div>

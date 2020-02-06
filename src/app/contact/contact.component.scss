@@ -4,8 +4,77 @@
 
 h1 {
     font-family: 'Rubik';
+    text-align: center;
 }
 
 p {
     padding: 5%;
+}
+
+mat-list-item {
+    font-size: medium !important;
+}
+
+h3 {
+    font-size: larger !important;
+    width: 120%;
+}
+
+mat-list {
+    width: 100%;
+}
+
+.list {
+    @media screen and (max-width: 1366px) {
+        margin: 2%;
+    }
+
+    @media screen and (max-width: 414px) {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 120%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+#first-list {
+
+    @media screen and (max-width: 1366px) {
+        margin: 5%;
+        width: 350px;
+    }
+
+    @media screen and (max-width: 414px) {
+        width: 120%;
+        margin-right: 15px;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 120%;
+        margin-right: 15px;
+    }
+}
+
+#second-list {
+
+    @media screen and (max-width: 1366px) {
+        margin: 5%;
+        width: 50%;
+    }
+
+    @media screen and (max-width: 414px) {
+        width: 120%;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 120%;
+    }
+}
+
+#web {
+    padding: 5px;
 }
