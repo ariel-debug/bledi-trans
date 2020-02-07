@@ -35,16 +35,16 @@ mat-toolbar a {
   margin: 0 10px;
   color: white;
   text-decoration: none;
-  font-family: 'Archivo';
+  font-family: 'Montserrat';
 }
 
 span {
-  font-family: 'Archivo';
+  font-family: 'Montserrat';
   color: white;
 }
 
 a {
-  font-family: 'Archivo';
+  font-family: 'Montserrat';
 }
 
 .hide {
@@ -85,7 +85,7 @@ a {
   position: relative;
   color: #000;
   text-decoration: none;
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
 }
 
 a:hover {
@@ -115,7 +115,7 @@ a:hover:before {
 
 .describe {
   color: black;
-  font-family: 'Archivo';
+  font-family: 'Montserrat';
 }
 
 
@@ -123,7 +123,7 @@ h1 {
   color: #45d9e6;
   -webkit-text-stroke: 1px black;
   font-weight: normal;
-  font-family: 'Archivo';
+  font-family: 'Montserrat';
 }
 
 
@@ -131,8 +131,9 @@ h2 {
   color: white;
   -webkit-text-stroke: 1px black;
   font-weight: normal;
-  font-family: 'Archivo';
+  font-family: 'Montserrat';
   text-align: center;
+  margin-top: 40px;
   
   @media only screen and (max-width: 1024px) {
     text-justify: auto;

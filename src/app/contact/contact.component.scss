@@ -3,7 +3,7 @@
 }
 
 h1 {
-    font-family: 'Rubik';
+    font-family: 'Montserrat';
     text-align: center;
 }
 
@@ -13,6 +13,7 @@ p {
 
 mat-list-item {
     font-size: medium !important;
+    font-family: 'Duru Sans';
 }
 
 h3 {
@@ -77,4 +78,12 @@ mat-list {
 
 #web {
     padding: 5px;
+
+    @media screen and (max-width: 414px) {
+        width: 140px;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 140px;
+    }
 }

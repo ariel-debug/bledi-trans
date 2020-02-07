@@ -9,11 +9,6 @@
   }
 }
 
-h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
 .mat1 {
   margin-left: 150px;
   margin-top: 50px;
@@ -111,7 +106,7 @@ mat-icon {
   margin: 100px;
   padding: 10px;
   font-size: 40px;
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Montserrat';
   height: 250px;
   z-index: 1;
   border-radius: 20px 20px 0px 0px;
@@ -171,7 +166,7 @@ p {
   margin-right: 15px;
   height: 100px;
   text-align: center;
-  font-family: 'Martel Sans';
+  font-family: 'Raleway';
   font-weight: bold;
 
   @media only screen and (max-width: 375px, 414px, 320px) {
@@ -183,6 +178,7 @@ p {
 h5 {
   text-align: center;
   font-weight: bold;
+  font-family: 'Montserrat';
   @media only screen and (max-width: 375px, 414px) {
     text-align: center;
   }
@@ -194,7 +190,7 @@ h6 {
   color: black;
   text-decoration: none;
   margin-top: 5%;
-  font-family: 'Martel Sans';
+  font-family: 'Montserrat';
 }
 
 h6:hover {
@@ -229,4 +225,8 @@ i {
   margin-right: 15px;
   margin-left: 15px;
   color: blue;
+}
+
+button {
+  font-family: 'Raleway';
 }
