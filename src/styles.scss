@@ -12,6 +12,10 @@ body {
     font-family: 'Archivo';
     width: fit-content;
     height: auto;
+
+    @media only screen and (width: 1366px) {
+        width: auto;
+    }
 }
 
 $fa-font-path: "../node_modules/font-awesome/fonts";
