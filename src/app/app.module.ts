@@ -19,7 +19,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MatCardModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material';
 import { HomeModule } from 'src/app/home/home.module';
-import { ServicesComponent } from './services/services.component';
+import { ServicesComponent } from './sherbimet/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
